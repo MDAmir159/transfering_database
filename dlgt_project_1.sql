@@ -3,7 +3,11 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
+<<<<<<< HEAD
 -- Generation Time: Aug 07, 2021 at 07:43 AM
+=======
+-- Generation Time: Aug 01, 2021 at 06:13 PM
+>>>>>>> 3e8e982a27f210e275c411bada0edb7c4f5c4940
 -- Server version: 10.3.16-MariaDB
 -- PHP Version: 7.3.7
 
@@ -25,6 +29,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
+<<<<<<< HEAD
 -- Table structure for table `comments`
 --
 
@@ -48,6 +53,8 @@ INSERT INTO `comments` (`commentId`, `postId`, `userId`, `commentDescription`, `
 -- --------------------------------------------------------
 
 --
+=======
+>>>>>>> 3e8e982a27f210e275c411bada0edb7c4f5c4940
 -- Table structure for table `posts`
 --
 
@@ -73,9 +80,13 @@ INSERT INTO `posts` (`postId`, `userId`, `postDescription`, `postInsertedTime`, 
 (37, 10009, 'Meeting is in a go', '11:02 PM', '', 'Crosby'),
 (38, 10009, 'Hola', '11:16 AM', '', 'Crosby'),
 (39, 10009, 'okay may be it\'s working', '11:36 AM', '', 'Crosby'),
+<<<<<<< HEAD
 (40, 10009, 'DP is OP', '12:26 PM', '', 'Crosby'),
 (41, 10009, 'asdasdasd', '4:16 PM', '', 'Crosby'),
 (42, 10009, 'Test run is a go', '4:17 PM', '', 'Crosby');
+=======
+(40, 10009, 'DP is OP', '12:26 PM', '', 'Crosby');
+>>>>>>> 3e8e982a27f210e275c411bada0edb7c4f5c4940
 
 -- --------------------------------------------------------
 
@@ -146,6 +157,7 @@ INSERT INTO `users` (`userId`, `userHandle`, `userPassword`, `userName`, `userPh
 --
 
 --
+<<<<<<< HEAD
 -- Indexes for table `comments`
 --
 ALTER TABLE `comments`
@@ -154,6 +166,8 @@ ALTER TABLE `comments`
   ADD KEY `userId` (`userId`);
 
 --
+=======
+>>>>>>> 3e8e982a27f210e275c411bada0edb7c4f5c4940
 -- Indexes for table `posts`
 --
 ALTER TABLE `posts`
@@ -176,6 +190,7 @@ ALTER TABLE `users`
 --
 
 --
+<<<<<<< HEAD
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
@@ -186,6 +201,12 @@ ALTER TABLE `comments`
 --
 ALTER TABLE `posts`
   MODIFY `postId` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+=======
+-- AUTO_INCREMENT for table `posts`
+--
+ALTER TABLE `posts`
+  MODIFY `postId` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=41;
+>>>>>>> 3e8e982a27f210e275c411bada0edb7c4f5c4940
 
 --
 -- AUTO_INCREMENT for table `test`
@@ -198,6 +219,7 @@ ALTER TABLE `test`
 --
 ALTER TABLE `users`
   MODIFY `userId` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10021;
+<<<<<<< HEAD
 
 --
 -- Constraints for dumped tables
@@ -209,6 +231,8 @@ ALTER TABLE `users`
 ALTER TABLE `comments`
   ADD CONSTRAINT `comments_ibfk_1` FOREIGN KEY (`postId`) REFERENCES `posts` (`postId`),
   ADD CONSTRAINT `comments_ibfk_2` FOREIGN KEY (`userId`) REFERENCES `users` (`userId`);
+=======
+>>>>>>> 3e8e982a27f210e275c411bada0edb7c4f5c4940
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
