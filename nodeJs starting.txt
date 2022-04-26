@@ -1,5 +1,6 @@
 npm init
 npm install
 npm i express
+npm install dotenv accesscontrol bcrypt body-parser express jsonwebtoken mongoose
 npm i --save-dev nodemon dotenv
 npm run devStart
